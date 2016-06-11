@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+[2, 4, 8, 16].each do |num|
+  Format.create!(contestant_amount: num, title: "#{num} Contestants")
+end
