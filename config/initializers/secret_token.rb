@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Brackets::Application.config.secret_key_base = 'b2930eaef4b05249dc9744c687e2c275de0dce1a56d6a33a8a0cc254d522448c607b282eb046673cc55a45e1e607e8f128cc2e8a07865eb320117710dc03ebf7'
+Brackets::Application.config.secret_key_base = 'a41d8a63a209216e27a7e3848329e1f6ac8951639c07deb8bb180640ba019df3b58477997568fd434f19aa29eb1fa8122b72f561d0db397d39aa607e74f1bf8d'
