@@ -1,5 +1,5 @@
 class Round < ActiveRecord::Base
-  belongs_to :bracket
+  belongs_to :bracket, dependent: :destroy
   has_many :contests
 
   validates_presence_of :bracket_id
