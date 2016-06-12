@@ -14,6 +14,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-byebug'
+end
+
 group :test do
   gem 'factory_girl_rails'
   gem 'shoulda-matchers'
