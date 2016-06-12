@@ -1,5 +1,6 @@
 class Bracket < ActiveRecord::Base
   has_many :rounds
+  has_many :contests, through: :rounds
   belongs_to :format
 
   validates_presence_of :title

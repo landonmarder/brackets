@@ -1,5 +1,6 @@
 class Round < ActiveRecord::Base
   belongs_to :bracket
+  has_many :contests
 
   validates_presence_of :bracket_id
 

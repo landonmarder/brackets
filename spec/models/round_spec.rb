@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe Round, type: :model do
   it { should belong_to(:bracket) }
   it { should validate_presence_of(:bracket_id) }
+  it { should have_many(:contests) }
 
   describe ".expired?" do
     context "round does not have an expired_at" do
