@@ -1,9 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe Round, type: :model do
-  it { should belong_to(:bracket).dependent(:destroy) }
-  it { should validate_presence_of(:bracket_id) }
-  it { should have_many(:contests) }
+  describe "validations" do
+    it { should belong_to(:bracket).dependent(:destroy) }
+    it { should validate_presence_of(:bracket_id) }
+    it { should have_many(:contests) }
+  end
 
   describe ".expired?" do
     context "round does not have an expired_at" do
