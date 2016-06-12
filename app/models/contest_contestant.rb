@@ -1,4 +1,5 @@
 class ContestContestant < ActiveRecord::Base
+  has_many :votes
   belongs_to :contest, dependent: :destroy
   belongs_to :contestant, dependent: :destroy
 
